@@ -5,7 +5,7 @@ class Database {
     private $host = 'localhost';
     private $usuario = 'root';
     private $senha = '';
-    private $banco = 'framework';
+    private $banco = 'blog_aula';
     private $porta = '3306';
     private $dbh;
     private $stmt;
@@ -61,26 +61,9 @@ class Database {
         return $this->stmt->execute();
     }
 
-    //obtem um único registro
-    public function resultado(){
-        $this->executa();
-        return $this->stmt->fetch(PDO::FETCH_OBJ);
-    }
-
-    //obtem um conjunto de registros
-    public function resultados(){
-        $this->executa();
-        return $this->stmt->fetchAll(PDO::FETCH_OBJ);
-    }
-
-    //retorna o número de linhas afetadas pela última instrução SQL
-    public function totalResultados(){
-        return $this->stmt->rowCount();
-    }
-
-    //retorna o último ID inserido no banco de dados
-    public function ultimoIdInserido(){
-        return $this->stmt->lastInsertId();
-    }
+    
 
 }
+
+
+
