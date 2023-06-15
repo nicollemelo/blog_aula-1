@@ -1,3 +1,4 @@
 # blog_aula
 
-Nesse projeto houve pequenas alterações
+Naná do naná do guraná do ludovico
+Como refrexcaaaaa
